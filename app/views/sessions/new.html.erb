@@ -1,3 +1,11 @@
-<%= form_for (@session) do |f| %>
 
+
+<h1>Login </h1>
+
+<%= form_with scope: :session, url: new_session_path do |f| %>
+<%= f.label :name, "Name" %>
+<%= f.text_field :name %>
+<%= f.submit "Login" %>
 <% end %>
+
+ 
