@@ -14,7 +14,7 @@ Event.create!(
   description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequat",
   location:"Chisiau",
   date: Time.now + 2.day,
-  user: User.second
+  creator: User.second
 )
 end
 
