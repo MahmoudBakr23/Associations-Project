@@ -1,0 +1,19 @@
+<h1>Create an ivent</h1>
+
+<%= form_with model:@event do |f| %>
+
+<%= f.label :name, "Event name" %><br />
+<%= f.text_field :name %><br />
+
+<%= f.label :location, "Event location" %><br />
+<%= f.text_field :location %><br />
+
+<%= f.label :date, "Date" %><br />
+<%= f.datetime_field :date %><br />
+
+<%= f.label :description, "Description" %><br />
+<%= f.text_area :description %><br />
+
+
+<%= f.submit "Create event"%>
+<% end %>
