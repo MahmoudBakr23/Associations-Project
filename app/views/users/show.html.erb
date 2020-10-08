@@ -1,16 +1,16 @@
 <h1><%= @user.name %></h1>
 
-<% @user.attended_events.each do |event| %>
-  <% if event.date >= Time.now %>
-    <h3>Upcoming Events</h3>
+<h3>Past Events</h3>
+<% @user.attended_events.past.each do |event| %>
     <h3><%= event.name %></h3> 
     <p> Location: <%= event.location %></p>
     <p>Desrciption: <%= event.description %></p>
-  <% else %>
-    <h3>Past Events</h3>
+<% end %>
+
+<h3>Upcoming Events</h3>
+<% @user.attended_events.future.each do |event| %>
     <h3><%= event.name %></h3> 
     <p> Location: <%= event.location %></p>
     <p>Desrciption: <%= event.description %></p>
-  <% end%>
 <% end %>
 
