@@ -3,15 +3,15 @@ class EventsController < ApplicationController
   before_action :check_user, only: %i[create new show]
 
   def index
-      @past = Event.past
-      @future = Event.future
-      @events = Event.all
+    @past = Event.past
+    @future = Event.future
+    @events = Event.all
   end
 
   def new
     @event = current_user.events.build
   end
- 
+
   def create
     @event = current_user.events.build(event_params)
     if @event.save
@@ -22,15 +22,16 @@ class EventsController < ApplicationController
   end
 
   def show
-  @event = Event.find(params[:id])
+    @event = Event.find(params[:id])
   end
 
-private
+  private
 
   def check_user
-      redirect_to root_path if !current_user
+    redirect_to root_path unless current_user
   end
+
   def event_params
-    params.require(:event).permit(:name,:location,:date,:description)
+    params.require(:event).permit(:name, :location, :date, :description)
   end
 end
