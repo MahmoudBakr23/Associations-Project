@@ -1,24 +1,44 @@
-# README
+# Private Events
+ 
+**This is part of the Active Record Associations in The Odin Project’s Ruby on Rails Microverse Curriculum**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built with
 
-Things you may want to cover:
+* Ruby 2.7.1p83
+* Rails 6.0.0.3
 
-* Ruby version
+## Getting Started
+* Clone the repo using this link https://github.com/MahmoudBakr23/Associations-Project
+* cd private-events
+* Open the terminal and insert the command "rails c" to open the rails console (irb)
 
-* System dependencies
+## Authors
 
-* Configuration
+👤 **Mahmoud**
 
-* Database creation
+- Github: [@MahmoudBakr23](https://github.com/MahmoudBakr23)
 
-* Database initialization
+- Linkedin: [Mahmoud Bakr](https://www.linkedin.com/in/m-bakr/)
 
-* How to run the test suite
+- Email: [contact on Gmail](mbakr6821@gmail.com)
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Vitalie**
 
-* Deployment instructions
+- Github: [@vmwhoami](https://github.com/vmwhoami)
 
-* ...
+- Linkedin: [Vitalie Melnic](https://www.linkedin.com/in/vitaliemelnic/)
+
+- Email: [contact on Gmail](vmwhoami@gmail.com)
+
+##    Contributing
+
+Contributions, issues and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Microverse
+- The Odin Project
