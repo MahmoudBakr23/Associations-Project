@@ -1,11 +1,11 @@
 class EventsController < ApplicationController
   include SessionsHelper
-before_action :check_user, only: %i[create new show]
+  before_action :check_user, only: %i[create new show]
 
   def index
-    @events = Event.all
-    @past = Event.past
-    @future = Event.future
+      @past = Event.past
+      @future = Event.future
+      @events = Event.all
   end
 
   def new

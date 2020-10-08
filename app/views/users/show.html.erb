@@ -1,10 +1,6 @@
 <h1><%= @user.name %></h1>
- 
-
-
 
 <% @user.attended_events.each do |event| %>
-
 
  <h3><%= event.name %></h3> 
   <p> Location: <%= event.location %></p>

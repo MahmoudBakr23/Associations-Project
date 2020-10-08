@@ -1,8 +1,21 @@
 <h1>Hello</h1>
 
-<% @events.each do |event| %>
-<h3><%= event.name %></h3>
+<h2>Past Events</h2>
 
+<% @past.each do |event| %>
+
+<h3><%= event.name %></h3>
+<p><%= event.date %></p>
+<p><%= event.description %></p>
+
+<% end %>
+
+<h2>Upcoming Events</h2>
+
+<% @future.each do |event| %>
+
+<h3><%= event.name %></h3>
+<p><%= event.date %></p>
 <p><%= event.description %></p>
 
 <% end %>
