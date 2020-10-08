@@ -8,6 +8,7 @@
 <p><%= event.date %></p>
 <p><%= event.description %></p>
 
+<%= link_to "See Event", event_path(event) %>
 <% end %>
 
 <h2>Upcoming Events</h2>
@@ -18,4 +19,5 @@
 <p><%= event.date %></p>
 <p><%= event.description %></p>
 
+<%= link_to "See Event", event_path(event) %>
 <% end %>

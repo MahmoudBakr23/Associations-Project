@@ -11,6 +11,14 @@ module SessionsHelper
     link_to 'Create a new Event', new_event_path if current_user
   end
 
+  def login_page
+    if current_user
+      current_user.name
+    else
+      link_to 'Sign Up', new_user_path
+    end
+  end
+
   def log_in(user)
     session[:user_id] = user.id
   end
