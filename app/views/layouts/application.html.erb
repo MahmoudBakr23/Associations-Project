@@ -11,9 +11,10 @@
 
   <body>
 
-  <p>You are logged in as <%= current_user.name if current_user %></p>
     <%= yield %>
+    <%= link_to  "Login", login_path unless current_user %>
       <% if current_user %>
+        <p>You are logged in as <%= current_user.name if current_user %></p>
        <%= link_to  "Logout", logout_path, method: :delete  %>
     <% end %>
   </body>

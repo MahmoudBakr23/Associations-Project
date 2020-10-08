@@ -4,6 +4,8 @@ before_action :check_user, only: %i[create new show]
 
   def index
     @events = Event.all
+    @past = Event.past
+    @future = Event.future
   end
 
   def new
